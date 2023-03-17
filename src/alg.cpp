@@ -8,25 +8,19 @@ mid = (right + left) / 2;
 if (arr[mid] > value) {
 sizeDiv /= 2;
 if (sizeDiv < 1) sizeDiv += 1;
-right -= sizeDiv;
-}
+right -= sizeDiv;}
 else if (arr[mid] < value) {
 sizeDiv /= 2;
 if (sizeDiv < 1) sizeDiv +=1;
-left += sizeDiv;
-}
+left += sizeDiv;}
 else if (arr[mid] == value) {
 while (arr[mid + i] == value) {
 count++;
-i++;
-};
+i++;};
 i = 1;
 while (arr[mid - i] == value) {
 count++;
-i++;
-};
-return count;
+i++;};
+return count;}
 }
-}
-return 0;
-}
+return 0;}
